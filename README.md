@@ -35,6 +35,22 @@ Key features:
 ## Project Structure
 
 The project is divided into two main parts:
+- **Backend**: FastAPI server
+- **Frontend**: React application
 
-1. Backend: FastAPI server
-2. Frontend: React application
+```bash
+FastAPI_ChatApp/
+│
+├── app/
+│   └── main.py
+│
+├── chat-app/
+│   ├── public/
+│   ├── src/
+│   │   ├── App.js
+│   │   └── App.css
+│   ├── package.json
+│   └── README.md
+│
+└── README.md
+```
