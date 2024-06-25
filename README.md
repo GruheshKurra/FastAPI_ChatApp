@@ -30,7 +30,7 @@ Key features:
 - Message persistence using MongoDB
 - Responsive UI
 
-![Sample Image](assets/pic2.png)
+[![Watch the video](assets/pic2.png)](assets/latestchatappvideo.mp4)
 
 ## Project Structure
 
