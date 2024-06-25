@@ -111,7 +111,9 @@ The frontend application will start running on http://localhost:3000.
 2. Enter a username to join the chat.
 3. Start sending and receiving messages in real-time.
 
-[Placeholder for a screenshot of the login screen] [Placeholder for a screenshot of the chat interface]
+![Sample Image](assets/pic1.png)
+![Sample Image](assets/pic2.png)
+![Sample Image](assets/pic3.png)
 
 ## Features
 
