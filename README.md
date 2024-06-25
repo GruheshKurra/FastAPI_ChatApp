@@ -17,8 +17,6 @@
 11. [Deployment Guide](#deployment-guide)
 12. [Troubleshooting](#troubleshooting)
 13. [Future Enhancements](#future-enhancements)
-14. [Contributing](#contributing)
-15. [License](#license)
 
 ## Introduction
 
@@ -313,14 +311,3 @@ Potential improvements for the project:
 - Improve error handling and connection recovery
 - Implement message read receipts
 - Add user profiles with avatars
-
-## Contributing
-
-Contributions to the FastAPI ChatApp are welcome! Please follow these steps:
-1. Fork the repository
-2. Create a new branch for your feature
-3. Commit your changes
-4. Push to your fork
-5. Submit a pull request
-
-Please ensure your code adheres to the project's coding standards and includes appropriate tests.
