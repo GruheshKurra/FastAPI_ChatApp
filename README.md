@@ -30,7 +30,7 @@ Key features:
 - Message persistence using MongoDB
 - Responsive UI
 
-<iframe src="https://drive.google.com/file/d/1F_hI849leVhD-Pa1rJI8luwPhXRss9s6/preview" width="640" height="480"></iframe>
+[Watch the video on YouTube](https://www.youtube.com/watch?v=jgdZbKpg4DQ)
 
 ## Project Structure
 
