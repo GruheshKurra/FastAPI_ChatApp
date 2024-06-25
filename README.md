@@ -31,6 +31,7 @@ Key features:
 - Responsive UI
 
 [![Watch the video](assets/pic2.png)](https://www.youtube.com/watch?v=jgdZbKpg4DQ)
+#### Click on the image to see the video
 
 ## Project Structure
 
