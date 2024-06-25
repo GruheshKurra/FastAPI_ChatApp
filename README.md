@@ -30,7 +30,7 @@ Key features:
 - Message persistence using MongoDB
 - Responsive UI
 
-[Placeholder for a screenshot or GIF of the application in action]
+![Sample Image](assets/pic2.png)
 
 ## Project Structure
 
