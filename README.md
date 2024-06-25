@@ -65,44 +65,44 @@ Before you begin, ensure you have the following installed:
 ## Installation
 
 ### Clone the Repository
-
+```bash
 git clone https://github.com/GruheshKurra/FastAPI_ChatApp.git
 cd FastAPI_ChatApp
-
+```
 ### Backend Setup
 
 1. **Create a virtual environment (optional but recommended):**
-
+```bash
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-
+```
 2. **Install the required Python packages:**
-
+```bash
 pip install fastapi uvicorn pymongo pydantic
-
+```
 3. **Start the MongoDB server locally.**
 
 4. **Run the FastAPI server:**
-
+```bash
 uvicorn app.main:app --reload
-
+```
 The backend server will start running on http://localhost:8000.
 
 ### Frontend Setup
 
 1. **Navigate to the frontend directory:**
-
+```bash
 cd chat-app
-
+```
 2. **Install the required npm packages:**
-
+```bash
 npm install
-
+```
 3. **Start the React development server:**
-
+```bash
 $env:NODE_OPTIONS="--openssl-legacy-provider"
 npm start
-
+```
 The frontend application will start running on http://localhost:3000.
 
 ## Usage
@@ -128,7 +128,7 @@ The frontend application will start running on http://localhost:3000.
 The backend is built using FastAPI and provides the following main components:
 
 #### FastAPI Application Setup:
-
+```bash
 app = FastAPI()
 
 app.add_middleware(
@@ -138,21 +138,21 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
+```
 #### MongoDB Connection:
-
+```bash
 client = MongoClient(os.getenv('MONGO_URI', 'mongodb://localhost:27017'))
 db = client['chat_app']
 messages_collection = db['messages']
-
+```
 #### Message Model:
-
+```bash
 class Message(BaseModel):
     user: str
     text: str
-
+```
 #### REST Endpoints:
-
+```bash
 @app.get("/messages")
 async def get_messages():
     messages = list(messages_collection.find({}, {"_id": 0}))
@@ -162,9 +162,9 @@ async def get_messages():
 async def post_message(message: Message):
     messages_collection.insert_one(message.dict())
     return message
-
+```
 #### WebSocket Handling:
-
+```bash
 @app.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):
     await manager.connect(websocket)
@@ -176,21 +176,21 @@ async def websocket_endpoint(websocket: WebSocket):
             await manager.broadcast(data)
     except WebSocketDisconnect:
         manager.disconnect(websocket)
-
+```
 ### Frontend (React)
 
 The frontend is a single-page React application with the following main components:
 
 #### State Management:
-
+```bash
 const [messages, setMessages] = useState([]);
 const [input, setInput] = useState('');
 const [user, setUser] = useState('');
 const [usernameInput, setUsernameInput] = useState('');
 const ws = useRef(null);
-
+```
 #### WebSocket Connection:
-
+```bash
 const connectWebSocket = () => {
   ws.current = new WebSocket('ws://localhost:8000/ws');
   
@@ -210,9 +210,9 @@ const connectWebSocket = () => {
 
   // ... error and close handlers
 };
-
+```
 #### Sending Messages:
-
+```bash
 const sendMessage = () => {
   if (input.trim() && ws.current && ws.current.readyState === WebSocket.OPEN) {
     const message = { user, text: input };
@@ -222,9 +222,9 @@ const sendMessage = () => {
     toast.warn('Unable to send message. Please check your connection.');
   }
 };
-
+```
 #### Rendering Messages:
-
+```bash
 <div className="chat-container">
   {messages.map((msg, index) => (
     <div key={index} className={`message ${msg.user === user ? 'own-message' : ''}`}>
@@ -232,7 +232,7 @@ const sendMessage = () => {
     </div>
   ))}
 </div>
-
+```
 ## API Documentation
 
 ### REST Endpoints
@@ -276,10 +276,10 @@ For deploying to a production environment:
 2. Update the `MONGO_URI` environment variable with the production database URL.
 3. Configure CORS settings in the FastAPI app for your production domain.
 4. Build the React app for production:
-
+```bash
 cd chat-app
 npm run build
-
+```
 5. Set up a reverse proxy (e.g., Nginx) to serve both the FastAPI backend and React frontend.
 6. Ensure proper error handling and reconnection logic for WebSockets in a production environment.
 7. Consider using environment variables for sensitive information and configuration.
