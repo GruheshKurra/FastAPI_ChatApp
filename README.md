@@ -254,21 +254,21 @@ const sendMessage = () => {
 ## WebSocket Protocol
 
 Messages are sent and received in the following format:
-
+```json
 {
   "user": "username",
   "text": "message content"
 }
-
+```
 ## Database Schema
 
 The MongoDB database uses a single collection named `messages` with the following schema:
-
+```json
 {
   "user": String,
   "text": String
 }
-
+```
 ## Deployment Guide
 
 For deploying to a production environment:
