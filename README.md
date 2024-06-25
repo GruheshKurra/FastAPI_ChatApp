@@ -321,7 +321,3 @@ Contributions to the FastAPI ChatApp are welcome! Please follow these steps:
 5. Submit a pull request
 
 Please ensure your code adheres to the project's coding standards and includes appropriate tests.
-
-## License
-
-[Specify your project's license here, e.g., MIT License]
