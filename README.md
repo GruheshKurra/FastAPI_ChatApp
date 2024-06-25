@@ -38,18 +38,3 @@ The project is divided into two main parts:
 
 1. Backend: FastAPI server
 2. Frontend: React application
-
-FastAPI_ChatApp/
-│
-├── app/
-│   └── main.py
-│
-├── chat-app/
-│   ├── public/
-│   ├── src/
-│   │   ├── App.js
-│   │   └── App.css
-│   ├── package.json
-│   └── README.md
-│
-└── README.md
