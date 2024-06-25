@@ -38,7 +38,7 @@ The project is divided into two main parts:
 - **Backend**: FastAPI server
 - **Frontend**: React application
 
-FastAPI_ChatApp/
+```bash
 FastAPI_ChatApp/
 │
 ├── app/
@@ -53,6 +53,7 @@ FastAPI_ChatApp/
 │   └── README.md
 │
 └── README.md
+```
 
 ## Prerequisites
 
