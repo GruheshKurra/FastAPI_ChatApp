@@ -30,8 +30,7 @@ Key features:
 - Message persistence using MongoDB
 - Responsive UI
 
-![Watch the video](assets/video.gif)
-
+<img src="assets/latestchatappvideo.gif" alt="Watch the video" width="600"/>
 ## Project Structure
 
 The project is divided into two main parts:
