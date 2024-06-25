@@ -30,7 +30,7 @@ Key features:
 - Message persistence using MongoDB
 - Responsive UI
 
-<img src="assets/video.gif" alt="Watch the video" width="600"/>
+[Watch the video on Google Drive](https://drive.google.com/file/d/1F_hI849leVhD-Pa1rJI8luwPhXRss9s6/view?usp=sharing)
 
 ## Project Structure
 
