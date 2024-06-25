@@ -1,55 +1,55 @@
-# FastAPI React MongoDB Chat Application
+# FastAPI ChatApp
+
+A real-time chat application built with FastAPI, React, and MongoDB.
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Project Structure](#project-structure)
+3. [Prerequisites](#prerequisites)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Features](#features)
+7. [Code Overview](#code-overview)
+8. [API Documentation](#api-documentation)
+9. [WebSocket Protocol](#websocket-protocol)
+10. [Database Schema](#database-schema)
+11. [Deployment Guide](#deployment-guide)
+12. [Troubleshooting](#troubleshooting)
+13. [Future Enhancements](#future-enhancements)
+14. [Contributing](#contributing)
+15. [License](#license)
 
 ## Introduction
-This is a real-time chat application built using FastAPI for the backend, React for the frontend, and MongoDB for data storage. The application leverages WebSockets for real-time communication.
 
-## Demo
-[Watch our demo video](https://drive.google.com/file/d/11QML05rwnO3_XhpGOaNm75PzqsNcOIzX/view?usp=sharing)
+FastAPI ChatApp is a real-time chat application built using the FARM stack (FastAPI, React, MongoDB). This project demonstrates how to create a simple yet functional chat system with real-time messaging capabilities using WebSockets.
 
-## Features
-- Real-time messaging using WebSockets
+Key features:
+- Real-time messaging
 - User authentication (username-based)
-- Message persistence with MongoDB
-- Responsive design
-- Toast notifications for connection status and new messages
+- Message persistence using MongoDB
+- Responsive UI
 
-## Technologies
-- Backend: FastAPI, PyMongo
-- Frontend: React, Axios
-- Database: MongoDB
-- Real-time Communication: WebSockets
-- Notifications: react-toastify
+[Add a screenshot or GIF of your application here]
 
-## Prerequisites
-- Python 3.7+
-- Node.js and npm
-- MongoDB
+## Project Structure
 
-## Installation
+The project is divided into two main parts:
 
-### Backend
-1. Navigate to the `app` directory
-2. Install the required Python packages
-3. Set the MongoDB URI environment variable
-4. Run the FastAPI server
+1. Backend: FastAPI server
+2. Frontend: React application
 
-### Frontend
-1. Navigate to the React app directory
-2. Install the required npm packages
-3. Start the React development server
-
-## Usage
-1. Open your browser and go to `http://localhost:3000`
-2. Enter a username to join the chat
-3. Start sending and receiving messages in real-time
-
-## API Endpoints
-- GET `/messages`: Retrieve all messages
-- POST `/messages`: Send a new message
-- WebSocket `/ws`: Real-time message broadcasting
-
-## Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-This project is licensed under the MIT License.
+FastAPI_ChatApp/
+│
+├── app/
+│   └── main.py
+│
+├── chat-app/
+│   ├── public/
+│   ├── src/
+│   │   ├── App.js
+│   │   └── App.css
+│   ├── package.json
+│   └── README.md
+│
+└── README.md
