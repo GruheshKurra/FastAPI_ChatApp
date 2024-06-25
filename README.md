@@ -54,3 +54,72 @@ FastAPI_ChatApp/
 │
 └── README.md
 ```
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- Python 3.7+
+- Node.js and npm
+- MongoDB
+
+## Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/GruheshKurra/FastAPI_ChatApp.git
+cd FastAPI_ChatApp
+```
+
+### Backend Setup
+
+1. **Create a virtual environment (optional but recommended):**
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+```
+
+2. **Install the required Python packages:**
+
+```bash
+pip install fastapi uvicorn pymongo pydantic
+```
+
+3. **Start the MongoDB server locally.**
+
+4. **Run the FastAPI server:**
+
+```bash
+uvicorn app.main:app --reload
+```
+
+The backend server will start running on 
+```bash
+http://localhost:8000.
+```
+
+### Frontend Setup
+
+1. **Navigate to the frontend directory:**
+
+```bash
+cd chat-app
+```
+
+2. **Install the required npm packages:**
+
+```bash
+npm install
+```
+
+3. **Start the React development server:**
+
+```bash
+$env:NODE_OPTIONS="--openssl-legacy-provider"
+npm start
+```
+
+The frontend application will start running on http://localhost:3000.
+
+
